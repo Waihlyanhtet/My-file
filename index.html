@@ -14,7 +14,7 @@
             align-items: center;
             justify-content: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #4a001f;
+            color: #ffffff; /* စာသားတွေကို အဖြူရောင်ပြောင်းလိုက်ပါတယ် (နောက်ခံနဲ့ ကြည့်ကောင်းအောင်) */
             text-align: center;
             position: relative;
             overflow-x: hidden;
@@ -31,32 +31,36 @@
             background-image: url('https://i.postimg.cc/FfnRVsj4/IMG-20260521-213240-808.jpg');
             background-size: cover;
             background-position: center;
-            filter: blur(4px) brightness(0.75);
+            filter: brightness(0.65); /* နောက်ခံကို နည်းနည်းပိုမှိန်ပေးထားပါတယ် */
             z-index: -1;
         }
 
+        /* အဖြူကွက်ကို မှန်ကြည်ရောင် ပြောင်းလဲလိုက်တဲ့နေရာ */
         .container {
-            background: rgba(255, 255, 255, 0.88);
+            background: rgba(255, 255, 255, 0.15); /* အဖြူရောင်ကို အလင်းပေါက် ၁၅% ပဲ ထားတော့ပါတယ် */
             padding: 25px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.25); /* အနားသတ်ကို မှန်ကြည်ရောင်လေး ခတ်ထားပါတယ် */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
             max-width: 85%;
             width: 340px;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(15px); /* နောက်ခံကို ခပ်ဝါးဝါး မှန်ကြည်ပုံစံ ပေါ်စေပါတယ် */
+            -webkit-backdrop-filter: blur(15px);
             animation: fadeIn 2s ease-in-out;
         }
 
         /* စာအပေါ်က ပုံ (Main Image) */
         .main-img {
             width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
         }
 
         h1 {
             font-size: 1.4rem;
-            margin-top: 18px;
-            margin-bottom: 10px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* စာလုံးတွေ ပိုထင်ရှားအောင် အရိပ်ထည့်ထားပါတယ် */
         }
 
         p {
@@ -65,6 +69,7 @@
             font-weight: 500;
             margin-bottom: 5px;
             white-space: pre-line;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5); /* စာလုံးတွေ ပိုထင်ရှားအောင် အရိပ်ထည့်ထားပါတယ် */
         }
 
         .heart {
