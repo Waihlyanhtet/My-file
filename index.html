@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 8 Months Anniversary ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #4a001f;
+            text-align: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* နောက်ခံပုံ (Background Image) */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* နောက်ခံကို ကောင်မလေးပုံ ထည့်ထားပါတယ် */
+            background-image: url('https://i.ibb.co/689N7p4p/Screenshot-20260521-215251.png');
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px) brightness(0.75); /* စာသားတွေ ထင်ရှားအောင် နောက်ခံကို ဝါးပြီး မှိန်ထားတာပါ */
+            z-index: -1;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.88);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 85%;
+            width: 340px;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* စာအပေါ်က ပုံ (Main Image) */
+        .main-img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin-top: 18px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .heart {
+            color: #ff4d6d;
+            font-size: 1.4rem;
+            animation: beat 1s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes beat {
+            to { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="main-img" src="https://i.ibb.co/6R5q8QJ3/Screenshot-20260521-221111.png" alt="Our Memory">
+        
+        <h1>For My Special One <span class="heart">❤️</span></h1>
+        
+        <p>"Happy 8 months ပါ ချစ်ဆုံးလေးယေ
+ နောင်နှစ်ပေါင်းများစွာထိ ကိုကိုတို့ တူတူ ချစ်သွားကြမယ်နော် 
+ကိုကို့အနားမှာ တစ်သက်လုံး ဆိုးတူတူကောင်းတူတူ ရှိနေပေးပါ 
+ကိုကိုတို့နှစ်ယောက် သာယာတဲ့ဘဝတစ်ခုကို တူတူတည်ဆောက်ကြမယ်နော် 
+ချစ်ဆုံးကို အများရီးချစ်တယ်
+အာဘွား😘😘😘"</p>
+    </div>
+
+</body>
+</html>
